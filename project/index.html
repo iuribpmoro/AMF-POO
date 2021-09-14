@@ -5,61 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HakEngine</title>
+
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="./images/hakengine.png" alt="HakEngine" style="width: 150px;">
-            <a href="#HakEngine">HakEngine</a>
-            <a href="#Recon">Reconnaisance</a>
-            <a href="#Scanning">Scanning</a>
-            <a href="#Exploitation">Exploitation</a>
-            <a href="#Malware Generator">Malware Generator</a>
-            <a href="./help.html">Help</a>
-        </nav>
-    </header>
-    <main>
-        <section id="HakEngine">
-            <h1>Heey Dear User!</h1>
-            <p>I'm glad to present to you... the <b>HakEngine Platform!</b></p>
-            <p>This desktop application has the primary goal to help all hackers around the world with their processes. And that means a fully interactive interface where you can do all sorts of stuff you would on CLI, but in a much more easy and beautiful way!</p>
-
-            <img src="./images/hackerman.jpg" alt="Hackerman" style="width: 500px;">
-
-            <h1>Available Functions:</h1>
-            <p>For this first version, we have the following functionalities available:</p>
-            <ul>
-                <li>Host Discovery</li>
-                <li>Port Scanning</li>
-                <li>Directory Enumeration</li>
-            </ul>
-
-            <h1>And that's it for now!</h1>
-            <p>Feel free to contact me or give feedbacks and suggestions down below :)</p>
-        </section>
-        <section>
-            <h1>Didn't find a function you want?</h1>
-            <form action="#" method="POST" id="feedbackForm">
-                <label for="lbl_function"><b>Function: </b></label>
-                <input type="text" id="function" name="function" required maxlength="100" minlength="3">
-                <label for="lbl_functionDescription"><b>Description:</b></label>
-                <textarea name="functionDescription" id="functionDescription" cols="30" rows="10" form="feedbackForm"></textarea>
-
-                <input type="submit" value="Enviar">
-            </form>
-
-            <h1>Testing</h1>
-        </section>
-    </main>
-    <footer>
-        <section id="footer">
-            <div>
-                <h1>Sobre:</h1>
-                <p>Esse site foi construído por <b>Iuri Moro</b>.</p>
-                <h1>Contato:</h1>
-                <p>Em caso de dúvidas, feedbacks, bugs ou sugestões, por favor entre em contato através do email <a href="mailto:iuribpmoro@gmail.com">iuribpmoro@gmail.com</a></p>
+    <div class="container">
+        
+        <div class="sidebar">
+            <div class="logo">
+                <img src="./images/hakengine.png" alt="HakEngine" style="width: 150px;">
             </div>
-        </section>
-    </footer>
+            <nav class="nav">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="#HakEngine">HakEngine</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#Recon">Reconnaisance</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#Scanning">Scanning</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#Exploitation">Exploitation</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#Malware Generator">Malware Generator</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="./help.html">Help</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+            <section id="HakEngine">
+                <h1>Heey Dear User!</h1>
+                <p>I'm glad to present to you... the <b>HakEngine Platform!</b></p>
+                <p>This desktop application has the primary goal to help all hackers around the world with their processes. And that means a fully interactive interface where you can do all sorts of stuff you would on CLI, but in a much more easy and beautiful way!</p>
+    
+                <img src="./images/hackerman.jpg" alt="Hackerman" style="width: 500px;">
+    
+                <h1>Available Functions:</h1>
+                <p>For this first version, we have the following functionalities available:</p>
+                <ul>
+                    <li>Host Discovery</li>
+                    <li>Port Scanning</li>
+                    <li>Directory Enumeration</li>
+                </ul>
+    
+                <h1>And that's it for now!</h1>
+                <p>Feel free to contact me or give feedbacks and suggestions down below :)</p>
+            </section>
+            <section>
+                <h1>Didn't find a function you want?</h1>
+                <form action="#" method="POST" id="feedbackForm">
+                    <label for="lbl_function"><b>Function: </b></label>
+                    <input type="text" id="function" name="function" required maxlength="100" minlength="3">
+                    <label for="lbl_functionDescription"><b>Description:</b></label>
+                    <textarea name="functionDescription" id="functionDescription" cols="30" rows="10" form="feedbackForm"></textarea>
+    
+                    <input type="submit" value="Enviar">
+                </form>
+    
+                <h1>Testing</h1>
+            </section>
+        </div>
+
+    </div>
+    
 </body>
 </html>
