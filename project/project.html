@@ -7,6 +7,7 @@
   <title>HakEngine</title>
 
   <link rel="stylesheet" href="project.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -36,7 +37,44 @@
       </ul>
     </nav>
     <div class="main">
-      a
+      <section id="HakEngine" class="introSection section">
+        <h1>Heey Dear User!</h1>
+        
+        <p>I'm glad to present to you... the <b>HakEngine Platform!</b></p>
+        <br>
+        <p>This desktop application has the primary goal to help all hackers around the world with their processes. And that means a fully interactive interface where you can do all sorts of stuff you would on CLI, but in a much more easy and beautiful way!</p>
+      </section>
+      <section id="Features" class="featuresSection section">
+        <h1>Available Features:</h1>
+        
+        <p>For this first version, we have the following functionalities available:</p>
+        <br>
+        <ul class="featuresList">
+            <li>Host Discovery</li>
+            <li>Port Scanning</li>
+            <li>Directory Enumeration</li>
+        </ul>
+
+      </section>
+      <!-- <section class="commentSection section">
+        <h1>And that's it for now!</h1>
+        
+      </section> -->
+      <section class="formSection section">
+        <h1>Didn't find a function you want?</h1>
+        <p>Feel free to contact me or give feedbacks and suggestions down below :)</p>
+        
+        <div class="feedbackFormContainer">
+          <form action="#" method="POST" id="feedbackForm" class="feedbackForm">
+              <label class="formLabel" for="lbl_function"><b>Function: </b></label>
+              <input class="formInput" type="text" id="function" name="function" required maxlength="100" minlength="3">
+              <label class="formLabel" for="lbl_functionDescription"><b>Description:</b></label>
+              <textarea class="formTextArea formInput" name="functionDescription" id="functionDescription"  form="feedbackForm"></textarea>
+  
+              <input class="formSubmit formInput" type="submit" value="Enviar">
+          </form>
+        </div>
+      </section>
     </div>
   </div>
 </body>

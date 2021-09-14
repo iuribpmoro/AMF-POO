@@ -4,16 +4,28 @@
   box-sizing: border-box;
 }
 
-html, body {
+body {
   width: 100%;
   height: 100%;
 
   font-family: sans-serif;
+
+  display: flex;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+p {
+  word-spacing: 0.2rem;
+  line-height: 1.5rem;
 }
 
 .container {
   display: flex;
-  height: 100%;
+  flex: 1;
   width: 100%;
 }
 
@@ -56,12 +68,14 @@ html, body {
   color: #BBB9B6;
 
   margin-left: 5%;
+  margin-right: 5%;
 }
 
 .sidebarItem {
   margin-top: 15px;
   display: flex;
   align-items: center;
+  padding: 2% 0;
 }
 
 .sidebarItem:first-child {
@@ -86,9 +100,81 @@ html, body {
   padding-bottom: 7.5px;
 
   margin-left: 10%;
+  margin-right: 10%;
 }
 
 .main {
   background-color: white;
-  flex:4
+  flex:4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 12vh;
+
+  color: #37352F;
+
+  padding-bottom: 15vh;
+
+}
+
+.section {
+  margin: 0 20%;
+}
+
+.introSection {
+  margin: 15vh 20% 0;
+  text-align: justify;
+}
+
+.featuresSection {
+  text-align: justify;
+}
+
+.featuresList {
+  line-height: 1.5rem;
+  list-style: none;
+}
+
+.feedbackFormContainer {
+  margin-top: 50px;
+  padding: 0 10%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.feedbackForm  {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 2vh;
+}
+
+.formLabel {
+  
+}
+
+.formInput {
+  padding: 15px;
+  width: 80%;
+  border: none;
+  background-color: #EFEFEE;
+}
+
+.formTextArea {
+}
+
+input[type="submit"] {
+  background-color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #EFEFEE;
 }
