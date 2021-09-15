@@ -157,3 +157,18 @@ footer {
     width: 4vh;
     fill: white;
 }
+
+@media only screen and (max-width: 800px) {
+    .navbar, .itemsContainer {
+        flex-direction: column;
+    }
+
+    main {
+        padding-top: 300px;
+    }
+
+    .content {
+        padding: 10px 5%;
+    }
+
+}
