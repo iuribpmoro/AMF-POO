@@ -95,6 +95,10 @@ main {
     padding-top: 100px;
 }
 
+section {
+    padding-top: 50px;
+}
+
 .sectionContainer {
     text-align: center;
 }
@@ -131,8 +135,49 @@ main {
 }
 
 .content {
-    padding: 10px 30%;
+    padding: 10px 30% 0px;
     text-align: justify;
+}
+
+.certsContainer {
+    padding: 20px 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cert {
+    max-height: 150px;
+    max-width: 100%;
+    margin: 20px;
+
+    transition: .5s ease;
+}
+
+.certDescriptionContainer {
+    max-width: 300px;
+    text-align: center;
+}
+
+.certDescription {
+    visibility: hidden;
+    opacity: 0;
+    /* transition: opacity .2s, visibility .2s; */
+    transition: .5s ease-in;
+}
+
+.sophosCert {
+    height: 75px;
+}
+
+.certContainer:hover .cert {
+    opacity: 0.3;
+}
+
+.certContainer:hover .certDescription {
+    visibility: visible;
+    opacity: 1;
 }
 
 
