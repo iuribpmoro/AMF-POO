@@ -151,33 +151,10 @@ section {
     max-height: 150px;
     max-width: 100%;
     margin: 20px;
-
-    transition: .5s ease;
-}
-
-.certDescriptionContainer {
-    max-width: 300px;
-    text-align: center;
-}
-
-.certDescription {
-    visibility: hidden;
-    opacity: 0;
-    /* transition: opacity .2s, visibility .2s; */
-    transition: .5s ease-in;
 }
 
 .sophosCert {
     height: 75px;
-}
-
-.certContainer:hover .cert {
-    opacity: 0.3;
-}
-
-.certContainer:hover .certDescription {
-    visibility: visible;
-    opacity: 1;
 }
 
 
