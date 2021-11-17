@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+    line-height: 30px;
+}
+
+html, body {
+    background-color: #36393F;
+    color: white;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+
+    flex: 1;
+    background-color: #2F3136;
+    padding: 0 30px;
+    min-height: 70px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 80px;
+}
+
+nav {
+    flex: 1;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {   
+    flex: 1;
+    list-style-type: none;
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logoContainer {
+    flex: 7;
+}
+
+.logoItem {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 7.5px 10px 7.5px 0;
+}
+
+.itemsContainer {
+    flex: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item a {
+    font-size: 1.25rem;
+}
+
+.item a:hover::after {
+    color: #ccc;
+}
+
+main {
+    flex: 8;
+    padding-top: 100px;
+}
+
+.sectionContainer {
+    text-align: center;
+}
+
+.title {
+    padding: 30px 30px;
+}
+
+.content {
+    padding: 10px 30%;
+    text-align: justify;
+    align-items: center;
+}
+
+input,button {
+    margin: 10px 0;
+}
+
+.addButton {
+    background-color: green;
+    color: white;
+}
+
+.listButton {
+    background-color: blue;
+    color: white;
+}
+
+.removeButton {
+    background-color: red;
+    color: white;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: stretch;
+}
+
+table {
+    width: 100%;
+}
+
+footer {
+    flex: 1;
+    background-color: #2F3136;
+    padding: 0 30px;
+
+    min-height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social {
+    margin-right: 15px;
+}
+
+.social svg {
+    width: 4vh;
+    fill: white;
+}
