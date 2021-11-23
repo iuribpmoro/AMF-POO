@@ -23,13 +23,21 @@ export class Drink extends Product {
     return JSON.parse(localStorage.getItem("storedDrinks"));
   }
 
+  getDrinkIndex(code){
+    let storedDrinks = JSON.parse(localStorage.getItem("storedDrinks"));
+
+    const drinkIndex = storedDrinks.findIndex(drink => drink.code == code);
+    
+    return drinkIndex;
+  }
+
   removeDrink(code){
     let storedDrinks = JSON.parse(localStorage.getItem("storedDrinks"));
 
-    const indexBebida = storedDrinks.findIndex(bebida => bebida.code == code);
+    const drinkIndex = storedDrinks.findIndex(drink => drink.code == code);
 
-    if (indexBebida > -1) {
-      storedDrinks.splice(indexBebida, 1);
+    if (drinkIndex > -1) {
+      storedDrinks.splice(drinkIndex, 1);
       localStorage.setItem("storedDrinks", JSON.stringify(storedDrinks));
       alert("Drink successfully removed!");
     } else {

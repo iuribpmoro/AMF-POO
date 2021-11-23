@@ -24,6 +24,14 @@ export class Food extends Product {
     return JSON.parse(localStorage.getItem("storedFoods"));
   }
 
+  getFoodIndex(code){
+    let storedFoods = JSON.parse(localStorage.getItem("storedFoods"));
+
+    const foodIndex = storedFoods.findIndex(comida => comida.code == code);
+    
+    return foodIndex;
+  }
+
   removeFood(code){
     let storedFoods = JSON.parse(localStorage.getItem("storedFoods"));
     

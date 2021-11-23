@@ -23,6 +23,14 @@ export class Order {
     return JSON.parse(localStorage.getItem("storedOrders"));
   }
 
+  getOrderIndex(code){
+    const storedOrders = JSON.parse(localStorage.getItem("storedOrders"));
+    
+    const orderIndex = storedOrders.findIndex(order => order.code == code);
+    
+    return orderIndex;
+  }
+
   removeOrder(code){
     let storedOrders = JSON.parse(localStorage.getItem("storedOrders"));
     

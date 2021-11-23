@@ -122,9 +122,40 @@ function addOrder(){
 }
 
 function listOrders(){
-  const header = ['Número', 'Mesa', 'Comida', 'Quantidade', 'Bebida', 'Quantidade'];
+  const header = ['Número', 'Mesa', 'Comida', 'Quantidade', 'Bebida', 'Quantidade', 'Total'];
+  
   const order = new Order();
-  createList(header, order.getOrder(), orderDiv);
+  const drink = new Drink();
+  const food = new Food();
+  
+  const storedOrders = order.getOrder()
+  
+  for(let storedOrder of storedOrders){
+    let total = 0;
+
+    const drinkIndex = drink.getDrinkIndex(storedOrder.drinks);
+
+    if(drinkIndex >= 0){
+      const storedDrinks = drink.getDrink();
+
+      storedOrder.drinks = storedDrinks[drinkIndex].name;
+
+      total += storedOrder.drinkAmount * storedDrinks[drinkIndex].price;
+    }
+
+    const foodIndex = food.getFoodIndex(storedOrder.foods);
+    
+    if(foodIndex >= 0){
+      const storedFoods = food.getFood(); 
+      
+      storedOrder.foods = storedFoods[foodIndex].name;
+      
+      total += storedOrder.foodAmount * storedFoods[foodIndex].price;
+    }
+    Object.assign(storedOrder, { totalPrice: total });
+  }
+  
+  createList(header, storedOrders, orderDiv);
 }
 
 function removeOrder(){
